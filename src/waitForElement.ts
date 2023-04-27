@@ -4,7 +4,6 @@ interface WaitForElementOptions {
   attributes?: boolean;
   subtree?: boolean;
   childList?: boolean;
-  attributeFilter?: string[];
   throwOnTimeout?: boolean;
   checkClientHeight?: boolean;
 }
@@ -19,7 +18,6 @@ export default function waitForElement(
     attributes = true,
     subtree = true,
     childList = true,
-    attributeFilter,
     throwOnTimeout = false,
     checkClientHeight = false,
   } = options;
@@ -42,7 +40,7 @@ export default function waitForElement(
       }
     });
 
-    observer.observe(root, { attributes, subtree, childList, attributeFilter });
+    observer.observe(root, { attributes, subtree, childList });
 
     if (timeout) {
       setTimeout(() => {
