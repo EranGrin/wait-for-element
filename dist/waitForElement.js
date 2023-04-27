@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function waitForElement(elementOrSelector, options = {}) {
-    const { timeout = 2500, root = document, attributes = true, subtree = true, childList = true, attributeFilter, throwOnTimeout = false, checkClientHeight = false, } = options;
+    const { timeout = 2500, root = document, attributes = true, subtree = true, childList = true, throwOnTimeout = false, checkClientHeight = false, } = options;
     const isElement = elementOrSelector instanceof Element;
     const element = isElement ? elementOrSelector : root.querySelector(elementOrSelector);
     return new Promise((resolve, reject) => {
@@ -16,7 +16,7 @@ function waitForElement(elementOrSelector, options = {}) {
                 resolve(node);
             }
         });
-        observer.observe(root, { attributes, subtree, childList, attributeFilter });
+        observer.observe(root, { attributes, subtree, childList });
         if (timeout) {
             setTimeout(() => {
                 observer.disconnect();

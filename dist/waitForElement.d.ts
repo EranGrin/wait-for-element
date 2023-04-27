@@ -4,7 +4,6 @@ interface WaitForElementOptions {
     attributes?: boolean;
     subtree?: boolean;
     childList?: boolean;
-    attributeFilter?: string[];
     throwOnTimeout?: boolean;
     checkClientHeight?: boolean;
 }
