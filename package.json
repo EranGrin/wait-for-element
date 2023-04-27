@@ -1,6 +1,6 @@
 {
   "name": "element-waiter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An npm package to wait for an element in the DOM to become available or for an attribute to change, with support for timeouts and customizable options",
   "main": "index.js",
   "author": "Eran Grin",

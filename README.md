@@ -1,19 +1,19 @@
 
 
-# Wait-for-Element
+# element-waiter
 
 A utility package to wait for DOM elements and attribute changes, with support for various JavaScript frameworks and TypeScript.
 
 ## Installation
 
 ```bash
-npm install wait-for-element
+npm install element-waiter
 ```
 
 Or
 
 ```bash
-yarn add wait-for-element
+yarn add element-waiter
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ yarn add wait-for-element
 ### waitForElement
 
 ```typescript
-import { waitForElement } from 'wait-for-element';
+import { waitForElement } from 'element-waiter';
 
 waitForElement(elementOrSelector, options)
   .then((element) => {
@@ -46,7 +46,7 @@ waitForElement(elementOrSelector, options)
 ### waitForAttributeChange
 
 ```typescript
-import { waitForAttributeChange } from 'wait-for-element';
+import { waitForAttributeChange } from 'element-waiter';
 
 waitForAttributeChange(selector, attributeName, options)
   .then((element) => {
@@ -73,7 +73,7 @@ Sure, I'll provide example implementations for both Vue and React.
 
 ### Vue
 
-Here's an example of using `wait-for-element` in a Vue component:
+Here's an example of using `element-waiter` in a Vue component:
 
 ```vue
 <template>
@@ -84,7 +84,7 @@ Here's an example of using `wait-for-element` in a Vue component:
 </template>
 
 <script>
-import { waitForElement } from 'wait-for-element';
+import { waitForElement } from 'element-waiter';
 
 export default {
   data() {
@@ -114,11 +114,11 @@ export default {
 
 ### React
 
-Here's an example of using `wait-for-element` in a React component:
+Here's an example of using `element-waiter` in a React component:
 
 ```jsx
 import React, { useRef, useState } from 'react';
-import { waitForElement } from 'wait-for-element';
+import { waitForElement } from 'element-waiter';
 
 function App() {
   const [showElement, setShowElement] = useState(false);
