@@ -1,0 +1,17 @@
+{
+  "name": "wait-for-element",
+  "version": "1.0.0",
+  "description": "An npm package to wait for an element in the DOM to become available or for an attribute to change, with support for timeouts and customizable options",
+  "main": "index.js",
+  "author": "Eran Grin",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.16.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  }
+}
